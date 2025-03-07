@@ -30,7 +30,7 @@ a.skip:focus {
 
 /* Hamburger label styling */
 .hamburger-label {
-    display: none;
+    /* display: none; */
     /* hidden on larger screens */
     cursor: pointer;
     font-size: 2rem;
