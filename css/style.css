@@ -7,17 +7,17 @@ body {
 
 a.skip {
     position: absolute;
-    top: auto;
-    left: -999px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    top: -50px;
+    left: 10px;
+    background: #000;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
 }
 
 a.skip:focus {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 10px
 }
 
 .menu-toggle {
@@ -69,8 +69,11 @@ a.skip:focus {
 
 img.headerimage {
     display: grid;
+    grid-template-columns: 8px auto 8px;
+    grid-column: 2 / span 1;
     margin: 20px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     justify-self: center;
     border: 5px groove #2F65A7;
 }
@@ -108,6 +111,7 @@ nav ul li {
 
 section {
     grid-column: 2 / span 1;
+    justify-items: center;
 }
 
 section>h2 {
@@ -120,7 +124,7 @@ section>h2 {
 
 article {
     width: 100%;
-    justify-self: center;
+    /* justify-self: center; */
     text-align: center;
     color: #FFCB05;
     background-color: #00274C;
