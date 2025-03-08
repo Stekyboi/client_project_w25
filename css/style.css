@@ -72,7 +72,7 @@ img.headerimage {
     grid-template-columns: 8px auto 8px;
     grid-column: 2 / span 1;
     margin: 20px;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     justify-self: center;
     border: 5px groove #2F65A7;
@@ -106,6 +106,8 @@ nav ul li {
     display: grid;
     grid-template-columns: 16px auto 16px;
     justify-content: center;
+    place-items: center;
+    /* width: 90%; */
     /* text-align: center; */
 }
 
@@ -124,7 +126,7 @@ section>h2 {
 
 article {
     width: 100%;
-    /* justify-self: center; */
+    justify-self: center;
     text-align: center;
     color: #FFCB05;
     background-color: #00274C;
