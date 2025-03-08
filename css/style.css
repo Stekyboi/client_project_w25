@@ -88,7 +88,7 @@ nav {
 nav ul {
     list-style: none;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr;
     /* justify-content: space-between; */
     /* justify-items: center; */
 }
@@ -104,7 +104,7 @@ nav ul li {
 
 .main {
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 10px 1fr 10px;
     justify-content: center;
     place-items: center;
     /* width: 90%; */
@@ -137,6 +137,7 @@ article {
 
 div.mental-health {
     display: flex;
+    flex-wrap: wrap;
 }
 
 div.mental-health>article {
