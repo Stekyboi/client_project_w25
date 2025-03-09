@@ -106,7 +106,7 @@ img.headerimage {
     grid-template-columns: 8px auto 8px;
     grid-column: 2 / span 1;
     margin: 20px;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     justify-self: center;
     border: 5px groove #2F65A7;
@@ -157,9 +157,10 @@ section {
     align-items: center;
     background-color: #2F65A7;
     color: white;
+    border: #00274C outset 5px;
     border-radius: 2%;
     margin: 2%;
-    padding: 3%;
+    padding: 5%;
 }
 
 section>h2 {
