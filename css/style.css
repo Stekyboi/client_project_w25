@@ -12,7 +12,7 @@ body {
 }
 
 body.index {
-    background-image: url("../images/UMSI_springday_41423_15.jpg");
+    background-image: url("../images/UMSI_springday_41423_15.JPG");
     background-size: initial;
     background-repeat: no-repeat;
     background-position: center;
@@ -202,11 +202,14 @@ article>figure>img {
     border-radius: 5px;
 }
 
-footer>p,
-footer>p>a {
+footer>p {
     background-color: #00274C;
     color: white;
     border-radius: 5%;
     margin: 1%;
     padding: 2%;
+}
+
+footer>p>a {
+    color: white;
 }
