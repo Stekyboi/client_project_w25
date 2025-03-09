@@ -103,7 +103,7 @@ a.skip:focus {
 
 img.headerimage {
     margin: 5% 1fr 5% 1fr;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     justify-self: center;
     border: 5px groove #2F65A7;
