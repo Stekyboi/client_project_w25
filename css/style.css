@@ -102,10 +102,11 @@ a.skip:focus {
 /* Header Image */
 
 img.headerimage {
-    margin: 5% 1fr 5% 1fr;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
     max-width: 90%;
-    height: auto;
-    justify-self: center;
     border: 5px groove #2F65A7;
 }
 
@@ -164,7 +165,9 @@ section>h2 {
     justify-self: center;
 }
 
-
+section>p>a {
+    color: white;
+}
 
 article {
     justify-self: center;
