@@ -104,7 +104,7 @@ a.skip:focus {
 img.headerimage {
     display: grid;
     grid-template-columns: 8px auto 8px;
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 2;
     margin: 5%;
     max-width: 100%;
     height: auto;
