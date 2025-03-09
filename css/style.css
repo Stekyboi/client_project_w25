@@ -105,7 +105,7 @@ img.headerimage {
     display: grid;
     grid-template-columns: 8px auto 8px;
     grid-column: 2 / span 1;
-    margin: 20px;
+    margin: 5%;
     max-width: 100%;
     height: auto;
     justify-self: center;
