@@ -102,7 +102,7 @@ a.skip:focus {
 /* Header Image */
 
 img.headerimage {
-    margin: 5%;
+    margin: 5% auto 5% auto;
     max-width: 100%;
     height: auto;
     justify-self: center;
