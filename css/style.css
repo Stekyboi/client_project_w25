@@ -1,8 +1,42 @@
 /* h1, h2{
     font-family: Oswald
 } */
+h1 {
+    background-color: #00274C;
+    color: white;
+    padding: 2% 0 2% 5%;
+}
+
 body {
     line-height: 1.5;
+}
+
+body.index {
+    background-image: url("../images/UMSI_springday_41423_15.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.page1 {
+    background-image: url("../images/UMSI_NorthQuadFall_10252022_1.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.page2 {
+    background-image: url("../images/UMSI_fallday_10.5.22_019.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.page3 {
+    background-image: url("../images/MCOMMONS-FinalsStudyLocations2024-07.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a.skip {
@@ -80,7 +114,7 @@ img.headerimage {
 
 
 nav {
-    background-color: #00274C;
+    background-color: #2F65A7;
     border-radius: 5px;
     justify-self: stretch;
 }
@@ -102,6 +136,11 @@ nav ul li {
     text-align: center;
 }
 
+a.currentpage {
+    font-weight: 900;
+    color: #131516;
+}
+
 .main {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
@@ -116,15 +155,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #2F65A7;
+    color: white;
+    border-radius: 2%;
+    margin: 2%;
+    padding: 3%;
 }
 
 section>h2 {
     justify-self: center;
 }
 
-/* section>p {
-    text-align: center;
-} */
+
 
 article {
     justify-self: center;
@@ -132,25 +174,39 @@ article {
     color: #FFCB05;
     background-color: #00274C;
     border-radius: 10px;
-    padding: 10px;
+    padding: 3%;
     margin: 5px;
 }
 
 div.mental-health {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 div.mental-health>article {
-    background-color: #CFC096;
-    color: #131516;
-    border: 3px #575294 dashed;
+    background-color: #00274C;
+    color: #FFCB05;
+    border: 5px #575294 dashed;
     border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+    margin: 10px;
+    padding: 3%;
+}
+
+div.mental-health>article>h3>a {
+    color: #FFCB05;
 }
 
 article>figure>img {
     width: 100%;
     border-radius: 5px;
+}
+
+footer>p,
+footer>p>a {
+    background-color: #00274C;
+    color: white;
+    border-radius: 5%;
+    margin: 1%;
+    padding: 2%;
 }
