@@ -236,6 +236,17 @@ article {
     margin: 5px;
 }
 
+article.hours div ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+article.hours div ul li{
+    padding: 5px;
+    margin: 0px;
+}
+
 div.mental-health {
     display: flex;
     flex-wrap: wrap;
@@ -273,7 +284,6 @@ footer>p>a {
 }
 
 @media (min-width: 1024px) {
-    /* Center the overall content and set a maximum width */
     body {
       margin: 0 auto;
       max-width: 1200px;
@@ -283,7 +293,6 @@ footer>p>a {
         grid-column: 1 / -1;
     }
 
-    /* Header adjustments for a horizontal layout */
     header {
       display: flex;
       align-items: center;
@@ -297,7 +306,6 @@ footer>p>a {
       text-align: center;
     }
   
-    /* Transform navigation from vertical to horizontal */
     nav {
       width: 100%;
     }
@@ -322,7 +330,6 @@ footer>p>a {
       color: #FFCB05;
     }
   
-    /* Main content: create a 2-column grid layout */
     .main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -330,7 +337,6 @@ footer>p>a {
       padding: 20px;
     }
     
-    /* Override previous mobile grid settings so sections auto-place */
     .main section {
       grid-column: auto;
     }
@@ -339,7 +345,6 @@ footer>p>a {
         grid-column: 1 / -1; 
     }
 
-    /* CAPShours: span both columns and display articles side by side */
     section.spanscolumns div {
       display: flex;
       flex-direction: row;
@@ -349,34 +354,30 @@ footer>p>a {
     }
 
   
-    /* Section styling adjusted for larger screens */
     section {
       background-color: #2F65A7;
-      color: #FFF;
+      color: white;
       padding: 30px;
       margin: 10px;
       border: 3px solid #00274C;
       border-radius: 8px;
     }
   
-    /* Optimize header image display */
     img.headerimage {
       max-width: 100%;
       height: auto;
       border: none;
     }
   
-    /* Challenging Element: Interactive hover effect on articles */
     article {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     article:hover,
     article:focus-within {
       transform: scale(1.02);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px black;
     }
   
-    /* Footer centered and padded for larger displays */
     footer {
       text-align: center;
       padding: 20px;
