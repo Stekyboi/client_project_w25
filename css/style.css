@@ -39,6 +39,58 @@ body.page3 {
     background-position: center;
 }
 
+body.error {
+    background-image: url("../images/UMSI_fallday_10.5.22_019.jpg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.error {
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    background-color: #2F65A7;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    border: #00274C outset 5px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+  
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00274C;
+    color: #FFCB05;
+    border: 2px solid #FFCB05;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.cta-button:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+    transform: scale(1.05);
+}
+.cta-button a{
+    color: #FFCB05;
+}
+
 a.skip {
     position: absolute;
     top: -50px;
@@ -134,6 +186,11 @@ nav ul li {
     text-align: center;
 }
 
+nav ul li a {
+    color:#00274C;
+}
+
+
 a.currentpage {
     font-weight: 900;
     color: #131516;
@@ -214,3 +271,116 @@ footer>p {
 footer>p>a {
     color: white;
 }
+
+@media (min-width: 1024px) {
+    /* Center the overall content and set a maximum width */
+    body {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  
+    body.index main section:first-child{
+        grid-column: 1 / -1;
+    }
+
+    /* Header adjustments for a horizontal layout */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      flex-direction: column;
+    }
+    
+    .headertext {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Transform navigation from vertical to horizontal */
+    nav {
+      width: 100%;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      padding: 0.5rem 1rem;
+      background-color: lightblue;
+      border: 2px groove #2F65A7;
+      border-radius: 2px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #00274C;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #FFCB05;
+    }
+  
+    /* Main content: create a 2-column grid layout */
+    .main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    /* Override previous mobile grid settings so sections auto-place */
+    .main section {
+      grid-column: auto;
+    }
+    
+    section.spanscolumns {
+        grid-column: 1 / -1; 
+    }
+
+    /* CAPShours: span both columns and display articles side by side */
+    section.spanscolumns div {
+      display: flex;
+      flex-direction: row;
+      gap: 20px; 
+      justify-content: center; 
+      align-items: center;
+    }
+
+  
+    /* Section styling adjusted for larger screens */
+    section {
+      background-color: #2F65A7;
+      color: #FFF;
+      padding: 30px;
+      margin: 10px;
+      border: 3px solid #00274C;
+      border-radius: 8px;
+    }
+  
+    /* Optimize header image display */
+    img.headerimage {
+      max-width: 100%;
+      height: auto;
+      border: none;
+    }
+  
+    /* Challenging Element: Interactive hover effect on articles */
+    article {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    article:hover,
+    article:focus-within {
+      transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  
+    /* Footer centered and padded for larger displays */
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  
+  

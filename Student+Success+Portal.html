@@ -34,10 +34,10 @@
                 <span class="visually-hidden">Menu</span>
             </label>
             <ul class="nav-menu">
-                <li><a class="currentpage" href="index.html" aria-current="page">Home</a></li>
-                <li><a href="page_1.html">Academic Support</a></li>
-                <li><a href="page_2.html">Counseling and Psychological Services (CAPS)</a></li>
-                <li><a href="page_3.html">First Generation Students</a></li>
+                <li><a class="currentpage" href="Student+Success+Portal.html" aria-current="page">Home</a></li>
+                <li><a href="Academic+Support.html">Academic Support</a></li>
+                <li><a href="Counseling+and+Psychological+Services+(CAPS).html">Counseling and Psychological Services (CAPS)</a></li>
+                <li><a href="First+Generation+Students.html">First Generation Students</a></li>
             </ul>
         </nav>
         <div class="headertext">
@@ -58,29 +58,31 @@
                 <li>Contact</li>
             </ol>
         </section>
-        <section>
+        <section class="spanscolumns">
             <h2>Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources
-                to help you stay in top physical condition:</p>
-            <article>
-                <h3>University Health Service (UHS)</h3>
-                <figure>
-                    <img src="images/UHS.jpg" alt="University Health Services building">
-                    <figcaption>University Health Services Building</figcaption>
-                </figure>
-                <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups,
-                    vaccinations, and specialist referrals.</p>
-            </article>
-            <article>
-                <h3>Recreational Sports</h3>
-                <figure>
-                    <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
-                        alt="A student wears a UMSI backpack in fall on the drag.">
-                    <figcaption>UMSI out in the fall!</figcaption>
-                </figure>
-                <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and
-                    healthy.</p>
-            </article>
+                <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources
+                    to help you stay in top physical condition:</p>
+            <div>
+                <article>
+                    <h3>University Health Service (UHS)</h3>
+                    <figure>
+                        <img src="images/UHS.jpg" alt="University Health Services building">
+                        <figcaption>University Health Services Building</figcaption>
+                    </figure>
+                    <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups,
+                        vaccinations, and specialist referrals.</p>
+                </article>
+                <article>
+                    <h3>Recreational Sports</h3>
+                    <figure>
+                        <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg"
+                            alt="A student wears a UMSI backpack in fall on the drag.">
+                        <figcaption>UMSI out in the fall!</figcaption>
+                    </figure>
+                    <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and
+                        healthy.</p>
+                </article>
+            </div>
         </section>
 
         <section>
@@ -136,10 +138,10 @@
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
-                href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
-                Advising </a></p>
+        <p>© Copyrights <span id="year"></span> by Dante Garetto. All rights reserved.</p>
     </footer>
 </body>
-
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
 </html>

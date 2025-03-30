@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <style>
+        h1,
+        h2 {
+            font-family: 'Playfair Display';
+        }
+
+        body {
+            font-family: 'Merriweather';
+            font-size: 90%;
+        }
+    </style>
+    <title>Error: 404</title>
+</head>
+<body class="error">
+    <!-- <header>
+        <nav aria-label="Primary Navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-label">
+                <span class="hamburger-icon">&#9776;</span>
+                <span class="visually-hidden">Menu</span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="Student+Success+Portal.html">Home</a></li>
+                <li><a href="Academic+Support.html">Academic Support</a></li>
+                <li><a href="Counseling+and+Psychological+Services+(CAPS).html">Counseling and Psychological Services (CAPS)</a></li>
+                <li><a href="First+Generation+Students.html">First Generation Students</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header>
+        <div class="error">
+            <h1 class="visually-hidden">404 ERROR: PAGE NOT FOUND</h1>
+            <h2>404</h2>
+            <h2>PAGE NOT FOUND</h2>
+        </div>
+    </header>
+
+    <main id="main" class="error">
+        <section>
+            <article>
+                <button class="cta-button" onclick="window.location.href='javascript:history.back()'">Head Back to where you came from</button>
+            </article>
+            <h2>OR</h2>
+            <article>
+                <button class="cta-button" onclick="window.location.href='Academic+Support.html#THECUBE'">Check out THE CUBE</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> by Dante Garetto. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>

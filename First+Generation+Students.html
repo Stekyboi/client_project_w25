@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    <style>
+        h1,
+        h2 {
+            font-family: 'Playfair Display';
+        }
+
+        body {
+            font-family: 'Merriweather';
+            font-size: 90%;
+        }
+    </style>
+    <title>First Generation Students</title>
+</head>
+
+<body class="page3">
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        <img class="headerimage" src="images/UMSI_DesignJam_GreatLakesWaterSafety_01.jpg"
+            alt="a group of students collaborating">
+        <nav aria-label="Primary Navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-label">
+                <span class="hamburger-icon">&#9776;</span>
+                <span class="visually-hidden">Menu</span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="Student+Success+Portal.html">Home</a></li>
+                <li><a href="Academic+Support.html">Academic Support</a></li>
+                <li><a href="Counseling+and+Psychological+Services+(CAPS).html">Counseling and Psychological Services (CAPS)</a></li>
+                <li><a class="currentpage" href="First+Generation+Students.html" aria-current="page">First Generation Students</a></li>
+            </ul>
+        </nav>
+        <div class="headertext">
+            <h1>Welcome, First Generation Students!</h1>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <section>
+            <h2>You Belong Here!</h2>
+            <p>First-generation students bring unique perspectives and strengths to our university community.
+                Whether
+                you're the first in your family to attend college or navigating this journey with limited support,
+                we’re
+                here to ensure you thrive. On this page, you’ll find resources, opportunities, and a community
+                designed
+                to help you succeed academically, socially, and personally.</p>
+        </section>
+
+        <section>
+            <h2>Resources for First-Gen Success</h2>
+            <p>Navigating college can feel overwhelming, but you don’t have to do it alone. Here are key resources
+                to help you get started:</p>
+            <ul>
+                <li>Academic Support: Access free tutoring, study groups, and workshops through the Academic Success
+                    Center.</li>
+                <li>Financial Aid Assistance: Learn how to navigate FAFSA, scholarships, and grant opportunities
+                    with our dedicated financial aid advisors.</li>
+                <li>Mentorship Programs: Pair up with faculty, staff, or peer mentors who are also first-generation
+                    college graduates.</li>
+                <li>Campus Navigation Tips: Explore resources like campus maps, orientation guides, and how-to
+                    workshops for using university systems.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Connect with the First-Gen Community</h2>
+            <article>
+                <h3>Build relationships with fellow first-gen students who understand your journey. Join student
+                    organizations like the First-Generation Student Union, or attend exclusive events like:</h3>
+                <div>
+                    <ul>
+                        <li>First-Gen Student Meet & Greet: Kick off the semester by connecting with peers, staff, and
+                            faculty who share similar experiences.</li>
+                        <li>First-Gen Celebration Week: Participate in workshops, networking events, and guest speaker
+                            sessions to honor your accomplishments and inspire future goals.</li>
+                        <li>Community Spotlights: Read and share stories from other first-gen students to inspire and
+                            motivate one another.</li>
+                    </ul>
+                </div>
+                <figure>
+                    <img src="images/MCOMMONS-FinalsStudyLocations2024-25.jpg" alt="a student studying with a laptop">
+                </figure>
+            </article>
+        </section>
+
+        <section>
+            <h2>Overcoming Common Challenges</h2>
+            <div>
+                <p>Being a first-generation student often comes with unique challenges, but you’re not alone. Here are
+                    tools to help you navigate:</p>
+                <ul>
+                    <li>Time Management: Learn to balance classes, work, and life with time-blocking tools and study
+                        tips.</li>
+                    <li>Impostor Syndrome: Workshops and counseling services are available to help you build confidence
+                        and embrace your achievements.</li>
+                    <li>Family Communication: Resources for bridging the gap between your academic life and your
+                        family’s expectations or understanding.</li>
+                    <li>Mental Health Support: Access free counseling, wellness programs, and stress management
+                        workshops.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Majority of text content taken from ChatGPT with the prompt, "write me 5 sections for a "First Generation Students" webpage on a university website that has helpful information and resources for first generation students"
+        ChatGPT. (2024). ChatGPT (4o) [Large language model]. -->
+    </main>
+    <footer>
+        <p>© Copyrights <span id="year"></span> by Dante Garetto. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</html>
