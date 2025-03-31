@@ -372,8 +372,7 @@ footer>p>a {
     article {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    article:hover,
-    article:focus-within {
+    article:hover {
       transform: scale(1.02);
       box-shadow: 0 4px 10px black;
     }
